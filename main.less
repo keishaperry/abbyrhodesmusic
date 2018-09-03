@@ -1,0 +1,128 @@
+@import "node_modules/uikit/src/less/uikit.theme.less";
+@import url('https://fonts.googleapis.com/css?family=Cantarell:400,700|Fjalla+One');
+@import url('https://fonts.googleapis.com/css?family=Syncopate:700');
+@import url('https://fonts.googleapis.com/css?family=Monoton');
+@global-font-family:    'Cantarell',-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+@bold-font-family:    'Fjalla+One',-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+@main-color: #F8F32B;
+@accent-color: #D55672;
+@global-muted-color: #333333;
+@global-primary-background:                     @main-color;
+
+@heading-hero-font-size:                        5rem;
+@heading-hero-line-height:                      1.2;
+.chunky{
+    .uk-heading-hero;
+/*     font-family: 'Syncopate'; */
+    font-family: 'Monoton';
+/*     font-size: 196px;
+    line-height: 146px; */
+    color: @accent-color;
+}
+.uk-button-primary{
+    .uk-heading-hero;
+    color: @global-muted-color;
+    &:hover{
+        color: @accent-color;
+    }
+}
+.uk-icon{
+    color: @global-muted-color;
+    &:hover{
+        color: @accent-color;
+    }
+}
+.meta{
+    font-family: @bold-font-family;
+    color: @accent-color;
+}
+
+.svg svg{
+    width:20px;
+    height: auto;
+}
+/* .skewed-bg{
+    background: #000;
+    padding: 200px 0;
+    transform:skew(0deg, -10deg);
+    margin-top: -200px;  
+    
+    .content{
+      transform:skew(0deg, 10deg);
+    } 
+}
+
+ */
+
+
+body{
+  background: #222;
+  color: #FFF;
+}
+
+.skewed-bg{
+  background: @main-color;
+  padding: 160px 0;
+  transform: skew(0deg, -10deg);
+  margin-top: -110px;  
+  
+  .content{
+    transform:skew(0deg, 10deg);
+    text-align: center;
+    
+    .title{
+      padding-top: 100px;
+      font-weight: normal;
+    }
+    
+    .text{
+      width:60%;
+      margin: 25px auto;      
+      color: lighten(@main-color, 55);
+    }
+    
+  } 
+}
+
+.footer{
+  padding-top: 300px;
+  
+  .credits{
+    text-align: center;
+    color: #666;
+    
+    .link{
+      color: @main-color;
+      text-decoration: none;
+    }
+    
+  }
+  
+}
+.hook-card{
+    border-top: 0.2em dashed @global-primary-background;
+}
+#booking{
+    border: 0.2em dashed @global-primary-background;
+}
+.hook-card-hover{
+    &:hover{
+        background: @global-muted-color;
+        .uk-countdown{display: none;}
+    }
+}
+.input{
+    .meta {color: @accent-color;}
+    .uk-text-primary {color:@main-color;}
+}
+
+.booking-link:hover{
+    cursor: pointer;
+}
+
+.form-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}

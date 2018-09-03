@@ -1,0 +1,89 @@
+---
+layout: default
+---
+<!-- <div class="skewed-bg uk-height-viewport" uk-height-viewport="expand:true;">
+    <div class="content uk-container-expand ">
+        <div class="uk-width-1-1 uk-width-1-5@m">
+            <a href="#booking-section" uk-toggle="target: #booking" uk-scroll><span class="uk-icon uk-link uk-position-small uk-position-top-left" uk-icon="icon:mail;ratio:4;"
+                uk-tooltip="title:Hollaback, girl"></span></a>
+        </div>
+        <div class="uk-width-1-1 uk-width-4-5@m uk-text-left@m uk-margin-large-top">
+            <h1 class="chunky">ABBY</h1>
+            <h1 class="chunky">RHODES</h1>
+            <h1 class="chunky">MUSIC</h1>
+        </div>
+    </div>
+</div> -->
+<div class="skewed-bg uk-height-viewport" uk-height-viewport="expand:true;">
+    <div class="content uk-container-expand ">
+        <div class="uk-grid uk-grid-large" uk-grid>
+
+            <div class="uk-width-1-5 uk-visible@m">
+                <a href="#booking-section" uk-toggle="target: #booking" uk-scroll><span class="uk-icon uk-link" uk-icon="icon:mail;ratio:4;" uk-tooltip="title:Hollaback, girl"></span></a>
+            </div>
+            <div class="uk-width-4-5@m uk-text-left uk-margin-large-top">
+                <h1 class="chunky">ABBY</h1>
+                <h1 class="chunky">RHODES</h1>
+                <h1 class="chunky">MUSIC</h1>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="uk-container uk-container-small uk-text-right">
+    <p class="meta uk-text-meta">what's good SB?</p>
+    <div class="uk-card uk-card-hover uk-card-body" uk-toggle="target: #desc-1,#date-1; mode: hover">
+        <div class="uk-grid uk-grid-small uk-child-width-1-2" uk-grid>
+            <div class="uk-text-center">
+                <!--countdown spot -->
+                <p id="date-1" class="uk-text-large uk-text-meta meta">9-18 @ 8pm</p>
+                <p id="desc-1" hidden class="uk-text-large uk-text-primary">wine + tapas + music (me) </p>
+            </div>
+            <div>
+                <h3 class="uk-card-title uk-text-primary">MOSTO CRUDO</h3>
+            </div>
+        </div>
+    </div>
+    <div class="uk-card uk-card-hover uk-card-body" uk-toggle="target: #desc-2,#date-2; mode: hover">
+        <div class="uk-grid uk-grid-small uk-child-width-1-2" uk-grid>
+            <div class="uk-text-center">
+                <!--countdown spot -->
+                <p id="date-2" class="uk-text-large uk-text-meta meta">DATE @ TIME</p>
+                <p id="desc-2" hidden class="uk-text-large uk-text-primary">Lorem ipsum dolor</p>
+            </div>
+            <div>
+                <h3 class="uk-card-title uk-text-primary">VENUE NAME</h3>
+            </div>
+        </div>
+    </div>
+    <div class="uk-card uk-card-hover uk-card-body" uk-toggle="target: #desc-3,#date-3; mode: hover">
+        <div class="uk-grid uk-grid-small uk-child-width-1-2" uk-grid>
+            <div class="uk-text-center">
+                <!--countdown spot -->
+                <p id="date-3" class="uk-text-large uk-text-meta meta">DATE @ TIME</p>
+                <p id="desc-3" hidden class="uk-text-large uk-text-primary">Lorem ipsum dolor</p>
+            </div>
+            <div>
+                <h3 class="uk-card-title uk-text-primary">VENUE NAME</h3>
+            </div>
+        </div>
+    </div>
+    <p id="booking-section" class="meta uk-text-meta booking-link" uk-toggle="target: #booking">wanna book?</p>
+    <div hidden id="booking" class="uk-card uk-card-hover uk-card-body">
+        <div class="uk-text-center uk-width-1-1 uk-margin">
+            <a href="mailto:contact@abbyrhodesmusic.com" class="uk-text-primary uk-h3 " uk-tooltip="title:whatevs! that's cool too...">contact@abbyrhodesmusic.com</a>
+        </div>
+        <form class="uk-form-blank">
+            <div class="uk-grid uk-grid-small uk-grid-stacked uk-child-width-1-1 uk-child-width-1-2@m" uk-grid>
+                <div class="uk-text-center form-wrapper">
+                        <input type="text" class="uk-text-large uk-text-meta meta uk-text-uppercase uk-text-center uk-width-1-1" data-default-val="VENUE NAME" value="VENUE NAME" />
+                        <input type="text" class="uk-text-large uk-text-meta meta uk-text-uppercase uk-text-center uk-width-1-1" data-default-val="DATE @ TIME" value="date @ TIME"/>
+                        <textarea class="uk-text-large uk-text-meta meta uk-text-uppercase uk-text-center uk-width-1-1 uk-height-small" data-default-val="TELL ME SOMETHING GOOD" >TELL ME SOMETHING GOOD</textarea>
+                        <input type="text" class="uk-text-large uk-text-meta meta uk-text-uppercase uk-text-center uk-width-1-1" data-default-val="YOUR EMAIL" value="YOUR EMAIL"/>
+                </div>
+                <div>
+                    <button class="uk-button uk-button-large uk-button-primary uk-width-1-1 uk-height-medium">SEND</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

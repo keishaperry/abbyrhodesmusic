@@ -1,0 +1,21 @@
+<footer class="footer">
+    <p class="credits">
+
+    </p>
+</footer>
+<script>
+    $("input").not(".editing").focus(function(){
+        $(this).val("").addClass("editing");
+    });
+    $("textarea").not(".editing").focus(function(){
+        $(this).val("").addClass("editing");
+    });
+    $("input").blur(function(){
+        console.log("blur");
+        if ($(this).val() === "") $(this).val($(this).data("default-val"));
+    });
+    $("textarea").blur(function(){
+        console.log("blur");
+        if ($(this).val() === "") $(this).val($(this).data("default-val"));
+    });
+</script>
